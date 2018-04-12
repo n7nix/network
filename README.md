@@ -5,11 +5,11 @@
 Used to test network connectivity within a county after main fiber
 optic cable is cut.
 
-The script will create a directory in /home/`<user>`/pinglogs and will
-log to file /home/`<user>`/pinglogs/pinglog.txt
+The script will create a directory in _/home/`<user>`/pinglogs_ and will
+log to file _/home/`<user>`/pinglogs/pinglog.txt_
 
 Since crontab wants explicit paths the following is an example where I copied
-connect_test.sh connect_list.txt to my local bin /home/`<user>`/bin
+_connect_test.sh_ and _connect_list.txt_ to my local bin /home/`<user>`/bin
 
 Crontab entry for running every 15 minutes looks like this:
 ```
@@ -19,13 +19,13 @@ Crontab entry for running every 15 minutes looks like this:
 ##### Files
 
 * local bin
-  * connect_test.sh
-  * connect_list.txt
+  * _connect_test.sh_
+  * _connect_list.txt_
 
 * log file
-  * /home/`<user>`/pinglogs/pinglog.txt
+  * _/home/`<user>`/pinglogs/pinglog.txt_
 
-* Format of ip address list file connect_list.txt
+* Format of ip address list file _connect_list.txt_
   * name ip_address
 ```
 Bob  10.1.2.3
@@ -33,7 +33,7 @@ Bob  10.1.2.3
 
 ##### Command line options
 
-* Usage: $scriptname [-d][-a][-t][-p][-h]
+* Usage: connect_test.sh [-d][-a][-t][-p][-h]
 ```
    -d set DEBUG to true
    -a Use all addresses, some fail

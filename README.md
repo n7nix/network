@@ -13,7 +13,7 @@ connect_test.sh connect_list.txt to my local bin /home/`<user>`/bin
 
 Crontab entry for running every 15 minutes looks like this:
 ```
-*/15 *   *   *   *  /home/gunn/`<user>`/connect_test.sh -t > /dev/null 2>&1
+*/15 *   *   *   *  /home/`<user>`/bin/connect_test.sh -t > /dev/null 2>&1
 ```
 
 ##### Files
